@@ -946,7 +946,7 @@ h6 {
 .floating-whatsapp {
   position: fixed;
   right: 1.5rem;
-  bottom: 1.5rem;
+  bottom: 20.5rem;
   z-index: 1200;
   display: inline-flex;
   align-items: center;
@@ -1342,7 +1342,7 @@ h6 {
 
   .floating-whatsapp {
     right: 1rem;
-    bottom: 1rem;
+    bottom: 10rem;
     width: 3.2rem;
     height: 3.2rem;
   }
