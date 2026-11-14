@@ -1,5 +1,6 @@
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import './App.css'
+import { curriculumModules } from './curriculumData'
 
 const navItems = [
   { label: 'Home', href: '#home' },
@@ -47,107 +48,6 @@ const featureCards = [
     icon: 'bi bi-window-stack',
     title: 'Full Stack AI Development',
     description: 'Connect frontend applications, APIs, databases, and AI services.',
-  },
-]
-
-const curriculumModules = [
-  {
-    title: 'MODULE 01 – Python for AI Development',
-    summary: 'Python fundamentals and AI-ready development workflow.',
-    items: [
-      'Python fundamentals and advanced concepts.',
-      'Functions, OOP, modules, and packages.',
-      'Working with JSON, CSV, and files.',
-      'Data processing using Pandas.',
-      'Practical Python exercises.',
-    ],
-  },
-  {
-    title: 'MODULE 02 – API Development & Integration',
-    summary: 'Build connected systems through REST APIs and external integrations.',
-    items: [
-      'REST API fundamentals.',
-      'HTTP methods and status codes.',
-      'API authentication and authorization.',
-      'Working with external APIs.',
-      'JSON processing.',
-      'API integration projects.',
-    ],
-  },
-  {
-    title: 'MODULE 03 – FastAPI & Backend Development',
-    summary: 'Create robust backend services and APIs for AI products.',
-    items: [
-      'FastAPI installation and configuration.',
-      'Routes, path parameters, and query parameters.',
-      'Pydantic models and validation.',
-      'CRUD REST API development.',
-      'MySQL and PostgreSQL integration.',
-      'Backend development for AI applications.',
-    ],
-  },
-  {
-    title: 'MODULE 04 – Generative AI & LLMs',
-    summary: 'Understand LLM capabilities and build AI-powered experiences.',
-    items: [
-      'Introduction to Generative AI.',
-      'Understanding LLM architecture and capabilities.',
-      'Prompt engineering.',
-      'Model APIs and integration.',
-      'Structured AI outputs.',
-      'Building LLM-powered applications.',
-    ],
-  },
-  {
-    title: 'MODULE 05 – Embeddings & Vector Databases',
-    summary: 'Work with semantic search, embeddings, and vector systems.',
-    items: [
-      'Understanding embeddings.',
-      'Semantic similarity search.',
-      'Vector database fundamentals.',
-      'ChromaDB with Python.',
-      'Metadata filtering.',
-      'Chunking strategies.',
-      'Hybrid search.',
-    ],
-  },
-  {
-    title: 'MODULE 06 – Retrieval Augmented Generation (RAG)',
-    summary: 'Design knowledge-grounded AI systems using retrieval pipelines.',
-    items: [
-      'RAG architecture.',
-      'Document ingestion.',
-      'PDF, DOCX, CSV, JSON, and other data sources.',
-      'Text splitting and chunking.',
-      'Embedding generation.',
-      'Vector retrieval.',
-      'Building complete RAG applications.',
-    ],
-  },
-  {
-    title: 'MODULE 07 – AI Agents & Tool Calling',
-    summary: 'Create intelligent agents that reason, decide, and act.',
-    items: [
-      'Introduction to AI Agents.',
-      'Agent architecture.',
-      'Reasoning and decision-making.',
-      'Function calling.',
-      'Tool integration.',
-      'Multi-step task execution.',
-      'Agent workflows.',
-    ],
-  },
-  {
-    title: 'MODULE 08 – AI Automation & Real-World Projects',
-    summary: 'Bring it all together with workflow automation and a capstone.',
-    items: [
-      'AI-powered automation.',
-      'Workflow orchestration.',
-      'Connecting APIs and databases.',
-      'Building practical AI solutions.',
-      'Deployment fundamentals.',
-      'Final capstone project.',
-    ],
   },
 ]
 
@@ -242,8 +142,29 @@ function SectionTitle({ title, subtitle }: { title: string; subtitle: string }) 
 }
 
 function App() {
-  const [activeModule, setActiveModule] = useState(0)
+  const [activeModule, setActiveModule] = useState<(typeof curriculumModules)[number] | null>(null)
   const [trainerPhotoLoaded, setTrainerPhotoLoaded] = useState(true)
+  const moduleDialogRef = useRef<HTMLDialogElement>(null)
+
+  useEffect(() => {
+    const dialog = moduleDialogRef.current
+    if (!dialog) return
+
+    const handleClose = () => setActiveModule(null)
+    dialog.addEventListener('close', handleClose)
+
+    return () => {
+      dialog.removeEventListener('close', handleClose)
+    }
+  }, [])
+
+  useEffect(() => {
+    const dialog = moduleDialogRef.current
+    if (!dialog) return
+
+    if (activeModule && !dialog.open) dialog.showModal()
+    if (!activeModule && dialog.open) dialog.close()
+  }, [activeModule])
 
   return (
     <div className="site-shell">
@@ -404,51 +325,69 @@ function App() {
         <section className="section curriculum-section" id="curriculum">
           <div className="container">
             <SectionTitle
-              title="Your 16-Week Learning Roadmap"
-              subtitle="From Python fundamentals to building production-oriented AI applications."
+              title="Complete Course Syllabus"
+              subtitle="Choose a module to explore its topics, from AI and Python fundamentals through production-ready AI agents."
             />
 
-            <div className="curriculum-grid" role="tablist" aria-label="Course curriculum modules">
-                {curriculumModules.map((module, index) => (
-                  <button
-                    key={module.title}
-                    className={index === activeModule ? 'curriculum-module-card active' : 'curriculum-module-card'}
-                    type="button"
-                    role="tab"
-                    aria-selected={index === activeModule}
-                    aria-controls={`curriculum-panel-${index}`}
-                    id={`curriculum-tab-${index}`}
-                    onClick={() => setActiveModule(index)}
-                  >
-                    <span className="module-card-number">0{index + 1}</span>
+            <div className="curriculum-grid" role="group" aria-label="Course syllabus modules">
+              {curriculumModules.map((module) => (
+                <button
+                  className="curriculum-module-card"
+                  key={module.number}
+                  type="button"
+                  aria-haspopup="dialog"
+                  onClick={() => setActiveModule(module)}
+                >
+                    <span className="module-card-number">{String(module.number).padStart(2, '0')}</span>
                     <span className="module-card-title">{module.title}</span>
-                    <span className="module-card-arrow" aria-hidden="true">
-                      <i className="bi bi-arrow-up-right"></i>
-                    </span>
-                  </button>
-                ))}
-            </div>
-
-            <div
-              className="curriculum-panel active"
-              id={`curriculum-panel-${activeModule}`}
-              role="tabpanel"
-              aria-labelledby={`curriculum-tab-${activeModule}`}
-              key={activeModule}
-            >
-              <div className="panel-header">
-                <span className="panel-badge">Module {activeModule + 1}</span>
-                <h3>{curriculumModules[activeModule].title}</h3>
-              </div>
-              <p className="panel-summary">{curriculumModules[activeModule].summary}</p>
-              <ul>
-                {curriculumModules[activeModule].items.map((item) => (
-                  <li key={item}>{item}</li>
-                ))}
-              </ul>
+                    <i className="bi bi-arrow-up-right module-card-arrow" aria-hidden="true"></i>
+                </button>
+              ))}
             </div>
           </div>
         </section>
+
+        <dialog
+          ref={moduleDialogRef}
+          className="curriculum-dialog"
+          aria-labelledby="curriculum-dialog-title"
+          onClick={(event) => {
+            if (event.target === event.currentTarget) moduleDialogRef.current?.close()
+          }}
+          onKeyDown={(event) => {
+            if (event.key === 'Escape') moduleDialogRef.current?.close()
+          }}
+        >
+            <div className="curriculum-dialog-content">
+              <div className="curriculum-dialog-header">
+                <div>
+                  {activeModule && (
+                    <span className="module-modal-number">
+                      Module {String(activeModule.number).padStart(2, '0')} of {curriculumModules.length}
+                    </span>
+                  )}
+                  <h2 className="curriculum-dialog-title" id="curriculum-dialog-title">
+                    {activeModule?.title ?? 'Course module'}
+                  </h2>
+                </div>
+                <button
+                  className="curriculum-dialog-close"
+                  type="button"
+                  aria-label="Close module details"
+                  onClick={() => moduleDialogRef.current?.close()}
+                >
+                  <i className="bi bi-x-lg" aria-hidden="true"></i>
+                </button>
+              </div>
+              <div className="curriculum-dialog-body">
+                {activeModule?.outline ? (
+                  <pre className="curriculum-outline">{activeModule.outline}</pre>
+                ) : (
+                  <p className="module-empty-outline">No additional topics are listed for this module.</p>
+                )}
+              </div>
+            </div>
+        </dialog>
 
         <section className="section projects-section" id="projects">
           <div className="container">
