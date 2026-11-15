@@ -29,16 +29,16 @@
 <meta property="og:locale" content="en_IN"/>
 <meta property="og:url" content="https://gen-ai-and-ai-agents-bootcamp.netlify.app/"/>
 <meta property="og:title" content="Master in Gen AI & AI Agents Bootcamp — Starts at just ₹4,999/month"/>
-<meta property="og:description" content="Don't just learn AI — build it. LLMs, RAG, AI Agents & Multi-Agent Systems with Satish Konduru (RSK TechMinds). 65 topics · 9 phases · 4 months · English + Telugu · Live 6–8 AM daily · Total ₹19,996 · EMI ₹4,999/month × 4 · Enquire on WhatsApp: +91 91822 56249"/>
+<meta property="og:description" content="Don't just learn AI — build it. LLMs, RAG, AI Agents & Multi-Agent Systems with Satish Konduru (RSK TechMinds). 90 topics · 15 phases · 4 months · English + Telugu · Live 6–8 AM daily · Total ₹24,995 · EMI ₹4,999/month × 5 · Enquire on WhatsApp: +91 91822 56249"/>
 <meta property="og:image" content="https://gen-ai-and-ai-agents-bootcamp.netlify.app/assets/og-share.jpg"/>
 <meta property="og:image:secure_url" content="https://gen-ai-and-ai-agents-bootcamp.netlify.app/assets/og-share.jpg"/>
 <meta property="og:image:type" content="image/jpeg"/>
 <meta property="og:image:width" content="1200"/>
 <meta property="og:image:height" content="630"/>
-<meta property="og:image:alt" content="Master in Generative AI and AI Agents Bootcamp by Satish Konduru, RSK TechMinds — golden AI agent robot, starts at ₹4,999 per month, 65 topics in 9 phases, English + Telugu, 6 to 8 AM daily"/>
+<meta property="og:image:alt" content="Master in Generative AI and AI Agents Bootcamp by Satish Konduru, RSK TechMinds — golden AI agent robot, starts at ₹4,999 per month, 90 topics in 15 phases, including the full MCP curriculum, English + Telugu, 6 to 8 AM daily"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:title" content="Master in Gen AI & AI Agents Bootcamp — Starts at just ₹4,999/month"/>
-<meta name="twitter:description" content="Build LLMs, RAG & AI Agents with Satish Konduru. 65 topics · 9 phases · 4 months · English + Telugu · Live 6–8 AM · Total ₹19,996 · EMI ₹4,999/month × 4"/>
+<meta name="twitter:description" content="Build LLMs, RAG & AI Agents with Satish Konduru. 90 topics · 15 phases · 4 months · English + Telugu · Live 6–8 AM · Total ₹24,995 · EMI ₹4,999/month × 5"/>
 <meta name="twitter:image" content="https://gen-ai-and-ai-agents-bootcamp.netlify.app/assets/og-share.jpg"/>
 <meta name="twitter:image:alt" content="Master in Generative AI and AI Agents Bootcamp — starts at ₹4,999 per month, by Satish Konduru, RSK TechMinds"/>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -60,48 +60,56 @@ section{padding:84px 0;scroll-margin-top:84px}
 .btn-wa{background:#128C4A;color:#fff}.btn-wa:hover{background:#0F7A40;transform:translateY(-2px)}
 .btn-ghost{background:#fff;border-color:var(--border-strong);color:var(--navy)}.btn-ghost:hover{border-color:var(--yellow);color:var(--navy);background:#FBF0D3}
 :focus-visible{outline:3px solid var(--yellow);outline-offset:3px;border-radius:6px}
-/* NAV */
-header{position:fixed;inset:0 0 auto 0;z-index:50;transition:.25s;color:#fff}
-header.scrolled{background:rgba(251,247,238,.97);backdrop-filter:blur(14px);border-bottom:1px solid var(--border);color:var(--navy);box-shadow:0 8px 28px rgba(122,92,46,.10)}
+/* NAV — light ivory bar from the start, so text is readable over the light hero */
+header{position:fixed;inset:0 0 auto 0;z-index:50;transition:.25s;color:var(--navy-deep);background:rgba(251,247,238,.94);backdrop-filter:blur(14px);border-bottom:1px solid var(--border)}
+header.scrolled{background:rgba(251,247,238,.99);border-bottom:1px solid var(--border-strong);color:var(--navy-deep);box-shadow:0 10px 30px rgba(122,92,46,.16)}
 .nav{display:flex;align-items:center;gap:18px;height:72px}
 .brand{display:flex;align-items:center;gap:11px;text-decoration:none;font-family:"Space Grotesk";font-weight:700;font-size:.98rem;line-height:1.2;color:inherit}
 .brand-mark{width:40px;height:40px;border-radius:11px;background:linear-gradient(145deg,#F3D98B 0%,var(--golden-sand) 55%,#B98427 100%);border:1px solid #A87F27;display:grid;place-items:center;font-size:1.05rem;flex:none;color:var(--navy-deep);box-shadow:inset 0 2px 2px rgba(255,255,255,.75),inset 0 -5px 8px rgba(97,74,36,.45),0 7px 14px rgba(61,44,16,.32);text-shadow:0 1px 2px rgba(255,255,255,.45)}
-.brand small{display:block;font-family:Manrope;font-weight:700;color:var(--on-navy-muted);font-size:.68rem;letter-spacing:.08em}
+.brand small{display:block;font-family:Manrope;font-weight:700;color:#7A5C2E;font-size:.68rem;letter-spacing:.08em}
 .brand-text{display:flex;flex-direction:column;justify-content:center;line-height:1.18}
 .brand-title{display:block}
 @media(min-width:961px){header .wrap{max-width:1320px}.nav{gap:12px}.nav .brand{flex:0 0 auto;flex-shrink:0}.nav .brand-text{flex:0 0 auto}.nav .brand-title{white-space:nowrap}.nav .brand small{white-space:nowrap}.nav-links{gap:2px}.nav-links a{padding:10px 6px;font-size:.88rem}.nav-emi{margin-left:4px}.nav-cta{margin-left:4px}}
 header.scrolled .brand small{color:var(--muted)}
 .nav-links{display:flex;gap:4px;margin-left:auto}
-.nav-links a{text-decoration:none;color:#F1E6CC;font-weight:700;font-size:.9rem;padding:10px 9px;border-radius:10px;min-height:40px;display:inline-flex;align-items:center;white-space:nowrap}
-header.scrolled .nav-links a{color:var(--muted)}
-.nav-links a:hover{color:var(--yellow);background:rgba(255,255,255,.08)}
-header.scrolled .nav-links a:hover{color:var(--navy);background:var(--bg2)}
+.nav-links a{text-decoration:none;color:#4A3510;font-weight:700;font-size:.9rem;padding:10px 9px;border-radius:10px;min-height:40px;display:inline-flex;align-items:center;white-space:nowrap}
+header.scrolled .nav-links a{color:#4A3510}
+.nav-links a:hover{color:var(--navy-deep);background:#F1E3BC}
+header.scrolled .nav-links a:hover{color:var(--navy-deep);background:#F1E3BC}
 .nav-emi{display:inline-flex;align-items:center;gap:7px;margin-left:10px;background:linear-gradient(160deg,#EFC96E 0%,var(--golden-sand) 55%,#C79A35 100%);color:var(--navy-deep);text-decoration:none;font-weight:800;height:40px;min-height:40px;padding:0 14px;border-radius:999px;box-shadow:inset 0 2px 2px rgba(255,255,255,.65),inset 0 -3px 6px rgba(97,74,36,.32),0 8px 20px rgba(217,164,65,.38);white-space:nowrap;line-height:1;flex:none;flex-shrink:0}
 .nav-emi strong{font-family:"Space Grotesk";font-weight:700;font-size:1.08rem;line-height:1}
 .nav-emi span{font-family:Manrope;font-size:.72rem;font-weight:800}
 .nav-emi small{font-family:Manrope;font-size:.6rem;font-weight:800;letter-spacing:.09em;text-transform:uppercase;line-height:1.15;text-align:left}
 .nav-cta{margin-left:8px;height:40px;min-height:40px;padding:0 20px;white-space:nowrap;flex:none;flex-shrink:0;line-height:1;font-size:.95rem}
 @media(max-width:1150px){.nav-emi{padding:0 11px}.nav-emi strong{font-size:1rem}.nav-cta{padding:0 16px}}
-.burger{display:none;margin-left:0;background:none;border:1px solid rgba(255,255,255,.45);border-radius:10px;width:44px;height:44px;color:inherit;font-size:1.25rem;cursor:pointer;flex:none}
+.burger{display:none;margin-left:0;background:#fff;border:1px solid var(--border-strong);border-radius:10px;width:44px;height:44px;color:var(--navy-deep);font-size:1.25rem;cursor:pointer;flex:none}
 header.scrolled .burger{border-color:var(--border-strong)}
-.mobile-menu{display:none;background:var(--navy-deep);border-bottom:3px solid var(--yellow);padding:10px 20px 18px}
-.mobile-menu.open{display:block}.mobile-menu a{display:flex;align-items:center;min-height:44px;text-decoration:none;font-weight:700;color:#F1E6CC;border-bottom:1px solid rgba(255,255,255,.14)}
+.mobile-menu{display:none;background:var(--ivory-sand);border-bottom:3px solid var(--yellow);padding:10px 20px 18px;box-shadow:0 18px 34px rgba(122,92,46,.18)}
+.mobile-menu.open{display:block}.mobile-menu a{display:flex;align-items:center;min-height:44px;text-decoration:none;font-weight:700;color:#3D2C10;border-bottom:1px solid var(--border)}
 .mobile-menu a:last-of-type{border:0}
-/* HERO */
-.hero{padding:132px 0 70px;position:relative;color:#fff;background:radial-gradient(900px 520px at 92% -10%,rgba(217,164,65,.28),transparent 60%),radial-gradient(700px 460px at -10% 30%,rgba(255,255,255,.10),transparent 60%),linear-gradient(140deg,#A8823F 0%,#7A5C2E 46%,#3D2C10 100%)}
-.hero h1,.hero h2,.hero h3{color:#fff}
-.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:44px;align-items:stretch}
-.badge{display:inline-flex;gap:8px;align-items:center;border:1px solid rgba(217,164,65,.65);background:rgba(217,164,65,.14);color:#FCEFD0;padding:7px 14px;border-radius:999px;font-size:.7rem;font-weight:800;letter-spacing:.14em}
+/* HERO — light ivory / light-sand background, dark text for clear readability */
+.hero{padding:132px 0 70px;position:relative;color:#3B2F1A;background:radial-gradient(820px 480px at 94% -8%,rgba(217,164,65,.20),transparent 62%),radial-gradient(640px 420px at -8% 88%,rgba(217,164,65,.14),transparent 60%),linear-gradient(180deg,#FFFEF9 0%,#FBF7EE 42%,#F4EAD6 82%,#EFE0BE 100%);overflow:hidden}
+.hero:before{content:"";position:absolute;width:340px;height:340px;right:-90px;top:96px;border:2px dashed rgba(168,127,39,.38);border-radius:50%;animation:heroSpin 42s linear infinite;pointer-events:none}
+.hero:after{content:"";position:absolute;width:14px;height:14px;left:4%;top:190px;border-radius:50%;background:var(--golden-sand);box-shadow:52px 26px 0 -3px #EBC87A,104px -8px 0 -5px var(--golden-sand);opacity:.75;animation:heroSparkle 3.6s ease-in-out infinite;pointer-events:none}
+.hero h1,.hero h2,.hero h3{color:#2E2008}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:44px;align-items:stretch;position:relative;z-index:1}
+.badge{display:inline-flex;gap:8px;align-items:center;border:1px solid #C79A35;background:#FFF3D6;color:#6B4F1D;padding:7px 14px;border-radius:999px;font-size:.7rem;font-weight:800;letter-spacing:.14em;box-shadow:0 6px 18px rgba(217,164,65,.22);animation:badgeGlow 2.8s ease-in-out infinite}
 .hero h1{font-size:clamp(2.5rem,6vw,4.3rem);font-weight:700;margin:20px 0 14px}
-.hero h1 .grad{color:#EBC87A}
-.hero .sub{font-family:"Space Grotesk";font-size:clamp(1.1rem,2.2vw,1.4rem);font-weight:600;color:#F7EED6}
-.hero .desc{color:var(--on-navy-muted);max-width:56ch;margin:14px 0 22px}
+.hero h1 .grad{color:#9A6E14;position:relative;display:inline-block;z-index:0}
+.hero h1 .grad:after{content:"";position:absolute;left:2px;right:2px;bottom:.06em;height:.22em;background:#F3D98B;border-radius:999px;z-index:-1;animation:gradUnderline 1s .7s cubic-bezier(.22,.8,.32,1) both;transform-origin:left}
+.hero .sub{font-family:"Space Grotesk";font-size:clamp(1.1rem,2.2vw,1.4rem);font-weight:600;color:#4A3510}
+.hero .desc{color:#4F3F24;max-width:56ch;margin:14px 0 22px;font-size:1.02rem}
 .chips{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:26px}
-.chip{display:inline-flex;gap:8px;align-items:center;background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.32);color:#fff;padding:9px 15px;border-radius:999px;font-weight:700;font-size:.88rem}
-.chip i{font-style:normal;color:#EBC87A;font-size:1.05rem;filter:drop-shadow(0 2px 2px rgba(38,27,8,.55)) drop-shadow(0 0 6px rgba(217,164,65,.35))}
+.chip{display:inline-flex;gap:8px;align-items:center;background:#FFFFFF;border:1px solid #DCC48A;color:#3D2C10;padding:9px 15px;border-radius:999px;font-weight:700;font-size:.88rem;box-shadow:0 6px 16px rgba(122,92,46,.10);transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease}
+.chip:hover{transform:translateY(-3px);border-color:var(--golden-sand);box-shadow:0 12px 24px rgba(122,92,46,.16)}
+.chip i{font-style:normal;color:#9A6E14;font-size:1.05rem;display:inline-block;animation:iconBounce 2.6s ease-in-out infinite}
+.chip:nth-child(2) i{animation-delay:.35s}.chip:nth-child(3) i{animation-delay:.7s}.chip:nth-child(4) i{animation-delay:1.05s}
 .hero-ctas{display:flex;flex-wrap:wrap;gap:12px}
-.hero .btn-ghost{background:transparent;border-color:rgba(255,255,255,.55);color:#fff}
-.hero .btn-ghost:hover{border-color:var(--yellow);color:var(--yellow);background:rgba(255,255,255,.06)}
+.hero .btn-ghost{background:#FFFFFF;border-color:#B99B57;color:#3D2C10}
+.hero .btn-ghost:hover{border-color:var(--golden-sand);color:#3D2C10;background:#FFF6DE;transform:translateY(-2px)}
+.hero .btn-primary{animation:ctaPulse 2.8s ease-in-out infinite}
+.hero-grid>div:first-child>*{animation:heroFadeUp .75s cubic-bezier(.22,.8,.32,1) both}
+.hero-grid>div:first-child>*:nth-child(1){animation-delay:.02s}.hero-grid>div:first-child>*:nth-child(2){animation-delay:.10s}.hero-grid>div:first-child>*:nth-child(3){animation-delay:.20s}.hero-grid>div:first-child>*:nth-child(4){animation-delay:.30s}.hero-grid>div:first-child>*:nth-child(5){animation-delay:.40s}.hero-grid>div:first-child>*:nth-child(6){animation-delay:.50s}.hero-grid>div:first-child>*:nth-child(7){animation-delay:.60s}
 .price-strip{margin-top:28px;display:flex;flex-wrap:wrap;gap:14px}
 .price-box{flex:1;min-width:210px;background:#fff;border:0;border-top:4px solid var(--yellow);border-radius:14px;padding:14px 18px;color:var(--navy);box-shadow:0 16px 36px rgba(61,44,16,.28)}
 .price-box span{display:block;font-size:.72rem;letter-spacing:.12em;color:var(--muted);font-weight:800;text-transform:uppercase}
@@ -113,11 +121,29 @@ header.scrolled .burger{border-color:var(--border-strong)}
 .price-box-emi p{margin:6px 0 0;color:#5E4517;font-size:.86rem;font-weight:700;line-height:1.4}
 .price-box-emi .emi-badge{position:absolute;top:-13px;right:16px;background:var(--navy);color:#fff;display:inline-block;font-size:.66rem;font-weight:800;letter-spacing:.11em;text-transform:uppercase;padding:6px 11px;border-radius:999px;box-shadow:0 8px 18px rgba(61,44,16,.35);white-space:nowrap}
 @media(max-width:600px){.price-box-emi strong{font-size:1.95rem}}
-.hero-visual{position:relative;display:flex;align-self:stretch;min-height:100%}
-.hero-visual img{flex:1;width:100%;height:100%;min-height:520px;object-fit:cover;object-position:center;border-radius:22px;border:1px solid rgba(255,255,255,.35);box-shadow:0 30px 80px rgba(46,33,10,.55)}
-.float-card{position:absolute;background:linear-gradient(165deg,#FFFFFF 0%,#F9F2E3 100%);border:0;border-left:4px solid var(--yellow);border-radius:14px;padding:11px 15px;font-size:.82rem;font-weight:800;color:var(--navy);box-shadow:inset 0 2px 2px rgba(255,255,255,.9),inset 0 -5px 9px rgba(122,92,46,.14),0 20px 42px rgba(46,33,10,.42),0 4px 10px rgba(46,33,10,.25)}
+.hero-visual{position:relative;display:flex;align-self:stretch;min-height:100%;animation:heroSlideIn .85s .18s cubic-bezier(.22,.8,.32,1) both}
+.hero-visual img{flex:1;width:100%;height:100%;min-height:520px;object-fit:cover;object-position:center;border-radius:22px;border:1px solid #DCC48A;box-shadow:0 24px 56px rgba(122,92,46,.28)}
+.float-card{position:absolute;background:linear-gradient(165deg,#FFFFFF 0%,#F9F2E3 100%);border:0;border-left:4px solid var(--yellow);border-radius:14px;padding:11px 15px;font-size:.82rem;font-weight:800;color:var(--navy);box-shadow:inset 0 2px 2px rgba(255,255,255,.9),inset 0 -5px 9px rgba(122,92,46,.14),0 20px 42px rgba(46,33,10,.28),0 4px 10px rgba(46,33,10,.16);animation:floatY 5s ease-in-out infinite}
 .float-card small{display:block;color:var(--muted);font-weight:600}
-.fc1{top:16px;left:-14px}.fc2{bottom:18px;right:-10px}.fc2 b{color:#8A651F}
+.fc1{top:16px;left:-14px}.fc2{bottom:18px;right:-10px;animation-delay:1.4s}.fc2 b{color:#8A651F}
+/* ANIMATIONS — hero entrance, floating cards, bouncing icons, glowing CTAs */
+@keyframes heroFadeUp{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+@keyframes heroSlideIn{from{opacity:0;transform:translateX(34px) scale(.985)}to{opacity:1;transform:none}}
+@keyframes floatY{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
+@keyframes iconBounce{0%,100%{transform:translateY(0) scale(1)}50%{transform:translateY(-4px) scale(1.12)}}
+@keyframes iconPop{0%{transform:scale(.6) rotate(-10deg);opacity:.4}60%{transform:scale(1.14) rotate(3deg)}100%{transform:scale(1) rotate(0)}}
+@keyframes badgeGlow{0%,100%{box-shadow:0 6px 18px rgba(217,164,65,.22)}50%{box-shadow:0 8px 26px rgba(217,164,65,.48)}}
+@keyframes ctaPulse{0%,100%{box-shadow:inset 0 2px 2px rgba(255,255,255,.65),inset 0 -4px 8px rgba(97,74,36,.35),0 10px 26px rgba(217,164,65,.35)}50%{box-shadow:inset 0 2px 2px rgba(255,255,255,.65),inset 0 -4px 8px rgba(97,74,36,.35),0 12px 34px rgba(217,164,65,.58)}}
+@keyframes heroSpin{to{transform:rotate(360deg)}}
+@keyframes heroSparkle{0%,100%{transform:translateY(0) scale(1);opacity:.55}50%{transform:translateY(-10px) scale(1.25);opacity:1}}
+@keyframes gradUnderline{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@keyframes emiGlow{0%,100%{box-shadow:inset 0 2px 3px rgba(255,255,255,.75),inset 0 -10px 18px rgba(97,74,36,.30),0 22px 46px rgba(217,164,65,.42),0 0 0 2px rgba(255,255,255,.5)}50%{box-shadow:inset 0 2px 3px rgba(255,255,255,.75),inset 0 -10px 18px rgba(97,74,36,.30),0 24px 54px rgba(217,164,65,.62),0 0 0 3px rgba(217,164,65,.35)}}
+@keyframes waPulse{0%{box-shadow:0 14px 34px rgba(0,0,0,.30),0 0 0 0 rgba(37,211,102,.45)}70%{box-shadow:0 14px 34px rgba(0,0,0,.30),0 0 0 16px rgba(37,211,102,0)}100%{box-shadow:0 14px 34px rgba(0,0,0,.30),0 0 0 0 rgba(37,211,102,0)}}
+.price-box-emi{animation:emiGlow 3s ease-in-out infinite}
+.wa-float{animation:waPulse 2.6s ease-out infinite}
+.reveal.in .icon{animation:iconPop .55s cubic-bezier(.22,.8,.32,1) both}
+.flow-step{transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease}.flow-step:hover{transform:translateY(-3px);border-color:var(--golden-sand);box-shadow:0 10px 22px rgba(122,92,46,.14)}
+.jnum{transition:transform .25s ease}.jstep:hover .jnum{transform:scale(1.1) rotate(-6deg)}
 /* DESKTOP HERO — widened so the robot image fills the space to its right */
 @media(min-width:1200px){.hero .wrap{max-width:1400px;padding:0 24px}.hero-grid{grid-template-columns:1fr 1.08fr;gap:40px}}
 /* STATS STRIP */
@@ -219,17 +245,43 @@ footer p{color:var(--on-navy-muted);font-size:.93rem}
 .wa-float{position:fixed;right:18px;bottom:calc(24px + env(safe-area-inset-bottom,0px));z-index:60;width:58px;height:58px;border-radius:50%;background:#25D366;display:grid;place-items:center;box-shadow:0 14px 34px rgba(0,0,0,.35);text-decoration:none}
 .wa-float svg{width:30px;height:30px;fill:#fff}
 .reveal{opacity:0;transform:translateY(16px);transition:.6s ease}.reveal.in{opacity:1;transform:none}
-@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}.hero-grid>div:first-child>*,.hero-visual{opacity:1!important;transform:none!important}}
 @media(max-width:960px){.wa-float{right:16px;bottom:calc(84px + env(safe-area-inset-bottom,0px));width:56px;height:56px}.nav-links,.nav .nav-cta{display:none}.nav{gap:10px}.nav-emi{display:inline-flex;flex:none;margin-left:auto;padding:0 12px;gap:5px;box-shadow:0 6px 16px rgba(217,164,65,.42)}.nav-emi strong{font-size:1rem}.nav-emi span{font-size:.68rem}.burger{display:grid;place-items:center}.hero-grid,.trainer-grid{grid-template-columns:1fr}.g4,.g3{grid-template-columns:repeat(2,1fr)}.stats .wrap{grid-template-columns:repeat(2,1fr);gap:22px}.curr-layout{grid-template-columns:1fr}.phase-nav{position:static;flex-direction:row;flex-wrap:wrap}.phase-nav button{flex:1 1 160px}.foot-grid{grid-template-columns:1fr 1fr}.fc1{left:6px}.fc2{right:6px}.hero-visual{display:block;min-height:0}.hero-visual img{height:auto;min-height:0}}
 @media(max-width:600px){section{padding:60px 0}.g4,.g3,.g2,.journey,.detail-rows{grid-template-columns:1fr}.price-card{padding:28px 20px}.hero{padding-top:110px}.foot-grid{grid-template-columns:1fr}.topic-body{padding-left:20px}.brand{font-size:.86rem;min-width:0}.brand small{display:none}.brand-mark{width:36px;height:36px;border-radius:10px}}
 @media(max-width:400px){.nav-emi{padding:6px 10px}.nav-emi strong{font-size:.94rem}.nav-emi span{font-size:.64rem}.brand{font-size:.8rem}}
+@media(max-width:960px){.brand{flex:1 1 0%;min-width:0;overflow:hidden}.brand-text{display:block;min-width:0;overflow:hidden}.brand-title{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}header .wrap{padding:0 14px}.nav{gap:8px}.hero-grid>*,.trainer-grid>*,.curr-layout>*,.grid>*{min-width:0}.hero-visual{overflow:hidden}}
+
+/* MCP */
+.mcp-badge{flex:none;background:var(--navy-deep);color:#EBC87A;font-size:.66rem;font-weight:800;letter-spacing:.12em;padding:5px 10px;border-radius:999px}
+.phase-block.mcp-phase{border-color:#C9A44F;background:#FBF3DC}
+.phase-block.mcp-phase .phase-head h3{color:var(--navy-deep)}
+.mcp-arch{background:linear-gradient(160deg,#54401E,#3D2C10);border-radius:22px;padding:30px 26px;color:#fff;margin-bottom:26px;box-shadow:0 24px 60px rgba(61,44,16,.30)}
+.mcp-arch h3{color:#fff;font-size:1.25rem;margin-bottom:4px}
+.mcp-arch .arch-sub{color:#EFE3C8;font-size:.92rem;margin:0 0 20px}
+.arch-layer-label{font-size:.68rem;font-weight:800;letter-spacing:.14em;color:#EBC87A;text-transform:uppercase;margin:0 0 8px}
+.arch-box{background:rgba(255,255,255,.08);border:1px solid rgba(235,200,122,.55);border-radius:14px;padding:14px 16px;text-align:center}
+.arch-box b{font-family:"Space Grotesk";display:block;font-size:1.02rem;color:#fff}
+.arch-box span{color:#EFE3C8;font-size:.84rem}
+.arch-box.hero-box{background:linear-gradient(145deg,#F3D98B,#D9A441);border-color:#fff}
+.arch-box.hero-box b{color:#3D2C10}.arch-box.hero-box span{color:#54401E;font-weight:600}
+.arch-arrow{text-align:center;color:#EBC87A;font-size:1.05rem;font-weight:800;padding:7px 0;line-height:1.3}
+.arch-arrow small{display:block;font-family:Manrope;font-size:.72rem;font-weight:700;letter-spacing:.08em;color:#D8C9A3}
+.arch-grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.arch-chips{display:flex;flex-wrap:wrap;gap:8px;justify-content:center}
+.arch-chips span{background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.35);border-radius:999px;padding:7px 13px;font-size:.83rem;font-weight:700;color:#fff}
+.flow{display:flex;flex-wrap:wrap;gap:8px;align-items:stretch}
+.flow-step{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--border-strong);border-radius:999px;padding:8px 14px;font-weight:700;font-size:.86rem;color:var(--navy-deep)}
+.flow-step b{font-family:"Space Grotesk";color:#8A651F}
+.flow-arrow{align-self:center;color:var(--rich-sand);font-weight:800}
+.mcp-phase-card{text-decoration:none}
+@media(max-width:700px){.arch-grid3{grid-template-columns:1fr}.mcp-arch{padding:22px 16px}}
 </style>
 </head>
 <body>
 <header id="header"><div class="wrap nav">
 <a class="brand" href="#home"><span class="brand-mark">◈</span><span class="brand-text"><span class="brand-title">Master in Gen AI &amp; AI Agents</span><small>By Satish Konduru · RSK TechMinds</small></span></a>
 <nav class="nav-links" aria-label="Main">
-<a href="#home">Home</a><a href="#about">About Course</a><a href="#curriculum">Curriculum</a><a href="#projects">Projects</a><a href="#trainer">Trainer</a><a href="#pricing">Pricing</a><a href="#contact">Contact</a>
+<a href="#home">Home</a><a href="#about">About Course</a><a href="#curriculum">Curriculum</a><a href="#mcp">MCP</a><a href="#projects">Projects</a><a href="#trainer">Trainer</a><a href="#pricing">Pricing</a><a href="#contact">Contact</a>
 </nav>
 <a class="nav-emi" href="#pricing" aria-label="Start at 4,999 rupees per month"><strong>₹4,999</strong><span>/ month</span></a>
 <a class="btn btn-primary nav-cta" href="https://wa.me/919182256249?text=Hello%20Satish%20Sir%2C%20I%20am%20interested%20in%20the%20Master%20in%20Gen%20AI%20and%20AI%20Agents%20Bootcamp.%20Please%20share%20the%20course%20details." target="_blank" rel="noopener">Enroll Now</a>
@@ -237,8 +289,8 @@ footer p{color:var(--on-navy-muted);font-size:.93rem}
 </div>
 <div class="mobile-menu" id="mobileMenu">
 <a href="#pricing" style="background:#D9A441;color:#3D2C10;border-radius:10px;padding:0 14px;margin:6px 0 10px;font-weight:800">Start at just ₹4,999 / month →</a>
-<a href="#home">Home</a><a href="#about">About Course</a><a href="#curriculum">Curriculum</a><a href="#projects">Projects</a><a href="#trainer">Trainer</a><a href="#pricing">Pricing</a><a href="#contact">Contact</a>
-<a href="https://wa.me/919182256249?text=Hello%20Satish%20Sir%2C%20I%20want%20to%20enroll%20in%20the%20Master%20in%20Gen%20AI%20and%20AI%20Agents%20Bootcamp." target="_blank" rel="noopener" style="color:#EBC87A">Enroll Now →</a>
+<a href="#home">Home</a><a href="#about">About Course</a><a href="#curriculum">Curriculum</a><a href="#mcp">MCP — Topics 66–90</a><a href="#projects">Projects</a><a href="#trainer">Trainer</a><a href="#pricing">Pricing</a><a href="#contact">Contact</a>
+<a href="https://wa.me/919182256249?text=Hello%20Satish%20Sir%2C%20I%20want%20to%20enroll%20in%20the%20Master%20in%20Gen%20AI%20and%20AI%20Agents%20Bootcamp." target="_blank" rel="noopener" style="color:#7A5C2E;font-weight:800">Enroll Now →</a>
 </div></header>
 
 <main>
@@ -248,20 +300,20 @@ footer p{color:var(--on-navy-muted);font-size:.93rem}
 <span class="badge">✦ NEXT-GENERATION AI DEVELOPMENT PROGRAM</span>
 <h1>MASTER IN<br><span class="grad">GENERATIVE AI</span><br>&amp; AI AGENTS</h1>
 <p class="sub">Don't Just Learn AI.<br>Build Intelligent AI Applications and Autonomous AI Agents.</p>
-<p class="desc">Master the complete journey from Python programming and API integration to Generative AI, LLMs, RAG, AI Agents, Multi-Agent Systems, and intelligent business automation through a comprehensive practical learning program.</p>
+<p class="desc">Master the complete journey from Python programming and API integration to Generative AI, LLMs, RAG, AI Agents, Multi-Agent Systems, Model Context Protocol (MCP), and intelligent business automation through a comprehensive practical learning program.</p>
 <div class="chips">
 <span class="chip"><i>🌐</i> English + Telugu</span>
 <span class="chip"><i>◷</i> 2 Hours Daily</span>
 <span class="chip"><i>☀</i> 6 AM – 8 AM</span>
-<span class="chip"><i>▦</i> 65 Topics · 9 Phases</span>
+<span class="chip"><i>▦</i> 90 Topics · 15 Phases</span>
 </div>
 <div class="hero-ctas">
 <a class="btn btn-primary" href="#curriculum">Explore Complete Syllabus ↓</a>
 <a class="btn btn-wa" href="https://wa.me/919182256249?text=Hello%20Satish%20Sir%2C%20I%20am%20interested%20in%20the%20Master%20in%20Gen%20AI%20and%20AI%20Agents%20Bootcamp.%20Please%20share%20the%20course%20details." target="_blank" rel="noopener">Enquire on WhatsApp</a>
 </div>
 <div class="price-strip">
-<div class="price-box"><span>Complete Course Fee</span><strong>₹19,996</strong><p style="margin:6px 0 0;color:var(--muted);font-size:.86rem;font-weight:600;line-height:1.4">One complete practical program — 65 topics, 9 phases.</p></div>
-<div class="price-box price-box-emi"><span class="emi-badge">★ Easy EMI · Start Today</span><span>Start Learning At Just</span><strong>₹4,999 <em>/ month</em></strong><p>× 4 months · No big upfront payment — begin now, pay monthly.</p></div>
+<div class="price-box"><span>Complete Course Fee</span><strong>₹24,995</strong><p style="margin:6px 0 0;color:var(--muted);font-size:.86rem;font-weight:600;line-height:1.4">One complete practical program — 90 topics, 15 phases, including the full MCP curriculum (Topics 66–90).</p></div>
+<div class="price-box price-box-emi"><span class="emi-badge">★ Easy EMI · Start Today</span><span>Start Learning At Just</span><strong>₹4,999 <em>/ month</em></strong><p>× 5 monthly installments · No big upfront payment — begin now, pay monthly.</p></div>
 </div>
 </div>
 <div class="hero-visual">
@@ -273,9 +325,9 @@ footer p{color:var(--on-navy-muted);font-size:.93rem}
 
 <!-- STATS -->
 <div class="stats"><div class="wrap">
-<div class="stat"><b>65</b><span>Structured Topics</span></div>
-<div class="stat"><b>9</b><span>Learning Phases</span></div>
-<div class="stat"><b>20</b><span>Practical Project Areas</span></div>
+<div class="stat"><b>90</b><span>Structured Topics</span></div>
+<div class="stat"><b>15</b><span>Learning Phases</span></div>
+<div class="stat"><b>26</b><span>Practical Project Areas</span></div>
 <div class="stat"><b>2 hrs</b><span>Daily · 6–8 AM</span></div>
 </div></div>
 
@@ -291,15 +343,63 @@ footer p{color:var(--on-navy-muted);font-size:.93rem}
 <div class="journey" id="journey"></div>
 </div></section>
 
+<!-- MCP SPOTLIGHT -->
+<section id="mcp" style="background:var(--bg2);border-top:1px solid var(--border);border-bottom:1px solid var(--border)"><div class="wrap">
+<div class="sec-head reveal"><span class="eyebrow">New · Phases 10–15 · Topics 66–90</span><h2>Model Context Protocol (MCP) — connect AI agents to the real world</h2><p>25 dedicated MCP topics take you from MCP fundamentals and the JSON-RPC protocol to building, securing and deploying production MCP servers — and wiring them into AI agents. Every topic and subtopic is in the syllabus below, in Phases 10–15.</p></div>
+<div class="mcp-arch reveal" role="img" aria-label="MCP ecosystem architecture diagram: an MCP Host containing the AI application and MCP Client connects over STDIO or Streamable HTTP transports to MCP Servers that expose Tools, Resources and Prompts, which in turn connect to external systems such as databases, APIs, files, GitHub, email and calendar.">
+<h3>🗺️ The MCP ecosystem — how it fits together</h3>
+<p class="arch-sub">One standard protocol between your AI application and every external system it needs.</p>
+<p class="arch-layer-label">MCP Host</p>
+<div class="arch-box hero-box"><b>AI Application · IDE · AI Agent</b><span>The host app the user interacts with — it owns the LLM conversation</span></div>
+<div class="arch-arrow">↓<small>HOST CONTAINS THE CLIENT</small></div>
+<p class="arch-layer-label">MCP Client</p>
+<div class="arch-box"><b>MCP Client</b><span>Discovers tools, resources &amp; prompts · negotiates capabilities · JSON-RPC 2.0 messages</span></div>
+<div class="arch-arrow">↓<small>TRANSPORT — STDIO · STREAMABLE HTTP · SSE</small></div>
+<p class="arch-layer-label">MCP Servers — each exposes three capability types</p>
+<div class="arch-grid3">
+<div class="arch-box"><b>🛠️ Tools</b><span>Actions the model can call — tools/list &amp; tools/call</span></div>
+<div class="arch-box"><b>📚 Resources</b><span>Data &amp; context the model can read — files, databases, APIs</span></div>
+<div class="arch-box"><b>💬 Prompts</b><span>Reusable prompt templates &amp; workflows</span></div>
+</div>
+<div class="arch-arrow">↓<small>SERVERS WRAP YOUR REAL SYSTEMS</small></div>
+<p class="arch-layer-label">External applications &amp; data</p>
+<div class="arch-chips"><span>🗄️ MySQL · PostgreSQL · MongoDB · ChromaDB</span><span>🔌 REST &amp; FastAPI APIs</span><span>📄 Files · PDF · CSV · JSON</span><span>🐙 GitHub</span><span>✉️ Email</span><span>📅 Calendar</span></div>
+</div>
+<div class="sec-head reveal" style="margin-bottom:18px"><span class="eyebrow">MCP Learning Journey</span><h2 style="font-size:1.5rem">Your path through the MCP curriculum</h2></div>
+<div class="flow reveal" style="margin-bottom:30px">
+<span class="flow-step"><b>01</b> MCP Fundamentals</span><span class="flow-arrow">→</span>
+<span class="flow-step"><b>02</b> Architecture &amp; Protocol</span><span class="flow-arrow">→</span>
+<span class="flow-step"><b>03</b> Server Development</span><span class="flow-arrow">→</span>
+<span class="flow-step"><b>04</b> Tools, Resources &amp; Prompts</span><span class="flow-arrow">→</span>
+<span class="flow-step"><b>05</b> Client Development</span><span class="flow-arrow">→</span>
+<span class="flow-step"><b>06</b> Transport Mechanisms</span><span class="flow-arrow">→</span>
+<span class="flow-step"><b>07</b> Real-World Integrations</span><span class="flow-arrow">→</span>
+<span class="flow-step"><b>08</b> AI Agent Integration</span><span class="flow-arrow">→</span>
+<span class="flow-step"><b>09</b> Agent Frameworks</span><span class="flow-arrow">→</span>
+<span class="flow-step"><b>10</b> Enterprise Architecture</span><span class="flow-arrow">→</span>
+<span class="flow-step"><b>11</b> Security &amp; Guardrails</span><span class="flow-arrow">→</span>
+<span class="flow-step"><b>12</b> Testing &amp; Production</span><span class="flow-arrow">→</span>
+<span class="flow-step"><b>13</b> Practical MCP Projects</span>
+</div>
+<div class="grid g3">
+<a class="card mcp-phase-card reveal" href="#curriculum"><div class="icon">🔌</div><h3>Phase 10 · MCP Fundamentals</h3><p>Topics 66–70 — what MCP is, Host / Client / Server architecture, the JSON-RPC protocol, and building your first MCP server.</p></a>
+<a class="card mcp-phase-card reveal" href="#curriculum"><div class="icon">🧰</div><h3>Phase 11 · Advanced MCP Capabilities</h3><p>Topics 71–79 — Tools, Resources &amp; Prompts in depth, Inspector debugging, clients, transports and real-application integrations.</p></a>
+<a class="card mcp-phase-card reveal" href="#curriculum"><div class="icon">🔀</div><h3>Phase 12 · Advanced Client Features</h3><p>Topics 80–82 — Elicitation, Sampling &amp; Roots, advanced communication and execution, and building remote MCP servers.</p></a>
+<a class="card mcp-phase-card reveal" href="#curriculum"><div class="icon">🤖</div><h3>Phase 13 · AI Agents + MCP</h3><p>Topics 83–84 — agents that discover and call MCP tools, plus LangChain, LangGraph &amp; LlamaIndex orchestration with MCP.</p></a>
+<a class="card mcp-phase-card reveal" href="#curriculum"><div class="icon">🏢</div><h3>Phase 14 · Enterprise &amp; Security</h3><p>Topics 85–87 — multi-server enterprise architecture, OAuth &amp; RBAC security, and MCP threats &amp; guardrails.</p></a>
+<a class="card mcp-phase-card reveal" href="#curriculum"><div class="icon">🚀</div><h3>Phase 15 · Testing &amp; Production</h3><p>Topics 88–90 — testing, monitoring &amp; production operations, the advanced MCP ecosystem, and 6 practical MCP projects.</p></a>
+</div>
+</div></section>
+
 <!-- CURRICULUM -->
 <section id="curriculum"><div class="wrap">
-<div class="sec-head reveal"><span class="eyebrow">Complete Syllabus</span><h2>65 topics. 9 phases. Nothing skipped.</h2><p>Tap a phase, then tap any topic to see what it covers. The curriculum runs in original sequence — from Python foundations (Topics 1–13) to advanced AI agent architectures (Topics 59–65).</p></div>
+<div class="sec-head reveal"><span class="eyebrow">Complete Syllabus</span><h2>90 topics. 15 phases. Nothing skipped.</h2><p>Tap a phase, then tap any topic to see what it covers. The curriculum runs in original sequence — from Python foundations (Topics 1–13) through advanced AI agent architectures (Topics 59–65) to the complete Model Context Protocol curriculum (Topics 66–90, Phases 10–15). Tap a phase marked MCP to explore the new topics.</p></div>
 <div class="curr-layout">
 <aside class="phase-nav" id="phaseNav" aria-label="Curriculum phases"></aside>
 <div id="phaseList"></div>
 </div>
 <div class="curr-actions">
-<button class="btn btn-primary" id="expandAll" type="button">View Complete Course Curriculum — Expand All 65 Topics</button>
+<button class="btn btn-primary" id="expandAll" type="button">View Complete Course Curriculum — Expand All 90 Topics</button>
 <a class="btn btn-ghost" href="https://wa.me/919182256249?text=Hello%20Satish%20Sir%2C%20please%20share%20the%20complete%20curriculum%20of%20the%20Master%20in%20Gen%20AI%20and%20AI%20Agents%20Bootcamp." target="_blank" rel="noopener">Get Curriculum on WhatsApp</a>
 </div>
 </div></section>
@@ -353,9 +453,9 @@ footer p{color:var(--on-navy-muted);font-size:.93rem}
 <div class="price-card reveal">
 <p style="letter-spacing:.14em;font-size:.75rem;font-weight:800;color:#EBC87A;margin:0 0 8px">MASTER IN GEN AI AND AI AGENTS BOOTCAMP</p>
 <p style="color:#EFE3C8;margin:0;font-size:.85rem;font-weight:700;letter-spacing:.1em">TOTAL COURSE FEE</p>
-<div class="fee">₹19,996</div>
+<div class="fee">₹24,995</div>
 <div class="emi-box">
-<div><span style="color:#EFE3C8;font-size:.78rem;font-weight:800;letter-spacing:.1em">EMI OPTION</span><br><b>₹4,999 / month</b><br><span style="color:#EFE3C8">for 4 months — easy monthly installments</span></div>
+<div><span style="color:#EFE3C8;font-size:.78rem;font-weight:800;letter-spacing:.1em">EMI OPTION</span><br><b>₹4,999 / month</b><br><span style="color:#EFE3C8">for 5 months — 5 easy monthly installments</span></div>
 <div><span style="color:#EFE3C8;font-size:.78rem;font-weight:800;letter-spacing:.1em">CLASS SCHEDULE</span><br><b style="color:#EBC87A">6:00 – 8:00 AM</b><br><span style="color:#EFE3C8">2 hours daily, before your workday begins</span></div>
 </div>
 <div class="detail-rows">
@@ -363,11 +463,12 @@ footer p{color:var(--on-navy-muted);font-size:.93rem}
 <div><span>Class Timings</span><b>6:00 AM – 8:00 AM</b></div>
 <div><span>Daily Duration</span><b>2 Hours</b></div>
 <div><span>Trainer</span><b>Satish Konduru</b></div>
-<div><span>Curriculum</span><b>65 Topics · 9 Phases</b></div>
+<div><span>Curriculum</span><b>90 Topics · 15 Phases</b></div>
+<div><span>Number of Installments</span><b>5 × ₹4,999 / month</b></div>
 <div><span>Format</span><b>Practical &amp; Project-Based</b></div>
 </div>
 <div style="display:flex;flex-wrap:wrap;gap:12px">
-<a class="btn btn-primary" href="https://wa.me/919182256249?text=Hello%20Satish%20Sir%2C%20I%20want%20to%20enquire%20about%20enrolling%20in%20the%20Master%20in%20Gen%20AI%20and%20AI%20Agents%20Bootcamp%20(%E2%82%B919%2C996)." target="_blank" rel="noopener">Enquire Now</a>
+<a class="btn btn-primary" href="https://wa.me/919182256249?text=Hello%20Satish%20Sir%2C%20I%20want%20to%20enquire%20about%20enrolling%20in%20the%20Master%20in%20Gen%20AI%20and%20AI%20Agents%20Bootcamp%20(%E2%82%B924%2C995)." target="_blank" rel="noopener">Enquire Now</a>
 <a class="btn btn-wa" href="https://wa.me/919182256249?text=Hello%20Satish%20Sir%2C%20please%20share%20details%20about%20the%20EMI%20option%20(%E2%82%B94%2C999%2Fmonth) for%20the%20Gen%20AI%20Bootcamp." target="_blank" rel="noopener">Chat on WhatsApp — Ask About EMI</a>
 </div>
 <p class="note" style="margin-top:20px">EMI payment terms should be confirmed with the trainer before enrolment. Message on WhatsApp to confirm the installment schedule and complete your admission.</p>
@@ -391,6 +492,7 @@ footer p{color:var(--on-navy-muted);font-size:.93rem}
 </div>
 <p style="color:#EFE3C8;margin-top:22px">Call / WhatsApp: <a href="tel:+919182256249" style="color:#EBC87A;font-weight:800;text-decoration:none">+91 91822 56249</a> &nbsp;·&nbsp; Email: <a href="mailto:rsktechminds@gmail.com" style="color:#EBC87A;font-weight:800;text-decoration:none">rsktechminds@gmail.com</a></p>
 </div></section>
+
 </main>
 
 <footer><div class="wrap">
@@ -431,8 +533,11 @@ var HIGHLIGHTS=[
 ["🔎","Retrieval-Augmented Generation","Connect LLMs to your documents with RAG and Advanced RAG pipelines."],
 ["🤖","AI Agent Development","Agents that plan, remember and use tools to complete real tasks."],
 ["🕸️","Multi-Agent Systems","Teams of specialised agents collaborating with LangGraph workflows."],
-["🚀","AI Automation and Deployment","Business integrations, security, evaluation and Docker-based production deployment."]];
-var JOURNEY=["Python Programming Foundations","API Development and Integrations","FastAPI and Backend Development","SQL and Vector Databases","Machine Learning Fundamentals","NLP, Tokenization and Embeddings","Neural Networks and Deep Learning","Generative AI and LLMs","Prompt Engineering and LLM Integration","RAG and Advanced RAG","AI Agents and Agent Frameworks","Multi-Agent Systems","AI Automation and Business Integrations","AI Security and Production Deployment"];
+["🚀","AI Automation and Deployment","Business integrations, security, evaluation and Docker-based production deployment."],
+["🔌","Model Context Protocol (MCP)","The open standard that connects LLMs and agents to external tools, data and applications — Phases 10–15."],
+["🛠️","MCP Servers, Tools & Prompts","Build MCP servers and design tools, resources and prompts that models can discover and use safely."],
+["🏢","Enterprise MCP & Security","Multi-server architecture, OAuth, RBAC, guardrails and production operations for MCP at scale."]];
+var JOURNEY=["Python Programming Foundations","API Development and Integrations","FastAPI and Backend Development","SQL and Vector Databases","Machine Learning Fundamentals","NLP, Tokenization and Embeddings","Neural Networks and Deep Learning","Generative AI and LLMs","Prompt Engineering and LLM Integration","RAG and Advanced RAG","AI Agents and Agent Frameworks","Multi-Agent Systems","AI Automation and Business Integrations","AI Security and Production Deployment","Model Context Protocol (MCP) Fundamentals","MCP Tools, Resources and Prompts","MCP Clients, Transports and Real-World Integrations","AI Agents + MCP Integration","Enterprise MCP Architecture, Security and Production"];
 var PROJECTS=[
 ["Python-Based API Applications","Build Python programs that consume and combine live APIs.","Python · Requests · JSON"],
 ["Authenticated Hugging Face Integration","Connect to Hugging Face models with secure token authentication.","Hugging Face · Auth · APIs"],
@@ -453,7 +558,13 @@ var PROJECTS=[
 ["RAG & Agent Evaluation System","Measure quality with evaluation and observability.","Evaluation · OpenTelemetry"],
 ["Secure AI Agent","Database and API permissions with guardrails.","Security · Permissions"],
 ["Production Multi-User RAG + Agent App","A multi-user application ready for real deployment.","Docker · FastAPI · RAG"],
-["Reusable AI Agent Platform","Package your agents into a reusable platform.","Platform · Architecture"]];
+["Reusable AI Agent Platform","Package your agents into a reusable platform.","Platform · Architecture"],
+["Calculator MCP Server","Your first hands-on MCP server with real tools (Topic 90, Project 1).","MCP · Python SDK · Tools"],
+["Document & File MCP Server","Expose documents and files to AI apps as MCP resources (Topic 90, Project 2).","MCP · Resources · Files"],
+["Database MCP Server","Query MySQL / PostgreSQL data through MCP tools (Topic 90, Project 3).","MCP · Databases · Tools"],
+["MCP Client + LLM Application","A client app that connects an LLM to MCP servers (Topic 90, Project 4).","MCP Client · LLM · JSON-RPC"],
+["MCP-Powered AI Agent","An agent that discovers and executes MCP tools end to end (Topic 90, Project 5).","Agents · MCP · Tool Calling"],
+["Enterprise Admissions AI Agent","A production-style admissions agent on enterprise MCP architecture (Topic 90, Project 6).","Enterprise · MCP · Agents"]];
 var TECH=[
 ["Programming",["Python"]],
 ["Backend",["FastAPI","Uvicorn","Pydantic"]],
@@ -462,7 +573,8 @@ var TECH=[
 ["Generative AI",["Large Language Models","Hugging Face","OpenAI Embeddings"]],
 ["RAG",["ChromaDB","Qdrant","Pinecone","Weaviate","Milvus"]],
 ["AI Agents",["LangChain","LangGraph","LlamaIndex"]],
-["Production",["Docker","REST APIs","SSE","WebSockets","OpenTelemetry"]]];
+["Production",["Docker","REST APIs","SSE","WebSockets","OpenTelemetry"]],
+["MCP & Protocols",["Model Context Protocol (MCP)","MCP Python SDK","JSON-RPC 2.0","MCP Inspector","STDIO Transport","Streamable HTTP"]]];
 var WHY=[
 ["🎯","Beyond Using AI Tools","Move past chat windows — learn to develop the applications behind them."],
 ["🛠️","Develop AI Applications","Design, code and ship real AI-powered software, not just demos."],
@@ -471,24 +583,27 @@ var WHY=[
 ["🤖","Agents That Use Tools","Create agents that call APIs, query databases and take action."],
 ["⚙️","Automate Business Processes","Connect AI to real workflows, CRMs and business integrations."],
 ["🕸️","Multi-Agent Applications","Coordinate specialised agents into intelligent systems."],
-["🔐","Production & Security","Architecture, permissions, evaluation and deployment done right."]];
+["🔐","Production & Security","Architecture, permissions, evaluation and deployment done right."],
+["🔌","Connect Anything with MCP","One protocol between your agents and databases, APIs, files and SaaS tools — no one-off integrations."],
+["🏢","Enterprise-Ready MCP Skills","Gateways, multi-tenancy, OAuth and audit logging — the MCP skills production teams ask for."]];
 var FAQS=[
-["What is the Master in Gen AI and AI Agents Bootcamp?","A comprehensive practical program covering Python, APIs, FastAPI, databases, Machine Learning, NLP, Deep Learning, Generative AI, LLMs, RAG, AI Agents, Multi-Agent Systems and AI automation — 65 topics across 9 phases, taught by Satish Konduru."],
+["What is the Master in Gen AI and AI Agents Bootcamp?","A comprehensive practical program covering Python, APIs, FastAPI, databases, Machine Learning, NLP, Deep Learning, Generative AI, LLMs, RAG, AI Agents, Multi-Agent Systems, Model Context Protocol (MCP) and AI automation — 90 topics across 15 phases, taught by Satish Konduru."],
 ["Who should join this course?","Developers, IT professionals, students and working professionals who want to move from using AI tools to building AI applications and agents. The course starts from Python fundamentals, so it suits motivated beginners as well."],
 ["Do I need prior AI or Machine Learning knowledge?","No. Machine Learning, NLP and Deep Learning foundations are covered inside the course (Topics 42–46) before you reach Generative AI and Agents."],
 ["Will Python be taught from the fundamentals?","Yes. Phase 1 (Topics 1–13) covers Python from setup, variables and loops through OOP, file handling and advanced concepts."],
-["Will I learn how to develop AI applications?","Yes — application development is the core of the program: APIs, FastAPI backends, LLM integration, RAG systems and agent applications, with 20 practical project areas."],
+["Will I learn how to develop AI applications?","Yes — application development is the core of the program: APIs, FastAPI backends, LLM integration, RAG systems and agent applications, with 26 practical project areas."],
 ["Will the course cover LLMs and Generative AI?","Yes. Phase 6 (Topics 47–52) covers Generative AI, how LLMs work, prompt engineering and building an LLM chatbot in Python."],
 ["What is RAG, and will I build RAG applications?","RAG (Retrieval-Augmented Generation) connects an LLM to your documents so it answers from your data. Phase 7 (Topics 53–54) covers RAG and Advanced RAG, including a Company Knowledge Base Chatbot and an Enterprise Document Assistant."],
-["Will I learn to develop AI Agents?","Yes. Phases 8–9 (Topics 55–65) cover agent architecture, tool use, memory, LangChain and LangGraph, through to production deployment."],
+["Will I learn to develop AI Agents?","Yes. Phases 8–9 (Topics 55–65) cover agent architecture, tool use, memory, LangChain and LangGraph, through to production deployment — and Phases 13–15 connect those agents to MCP and production systems."],
+["Will I learn MCP (Model Context Protocol)?","Yes — MCP is a major part of this bootcamp. Phases 10–15 (Topics 66–90) cover MCP fundamentals, architecture and the JSON-RPC protocol, server / client / transport development, Tools, Resources and Prompts, AI Agent + MCP integration, enterprise architecture and security, testing and production — finishing with 6 practical MCP projects in Topic 90."],
 ["Will I learn Multi-Agent Systems?","Yes — Topic 60 covers multi-agent collaboration patterns, applied in the Multi-Agent Research System project area."],
 ["Which programming languages and technologies are covered?","Python is the core language, with FastAPI, MySQL, PostgreSQL, ChromaDB, Scikit-learn, Hugging Face, LangChain, LangGraph, LlamaIndex, Docker and more. See the Technology Stack section for the full list."],
-["What is the course fee?","The complete course fee is ₹19,996."],
-["Is an EMI payment option available?","Yes — ₹4,999 per month for 4 months. Please confirm the EMI terms with the trainer on WhatsApp before enrolment."],
+["What is the course fee?","The complete course fee is ₹24,995."],
+["Is an EMI payment option available?","Yes — ₹4,999 per month for 5 months (5 installments, total ₹24,995). Please confirm the EMI terms with the trainer on WhatsApp before enrolment."],
 ["What is the course language?","English + Telugu."],
 ["What are the class timings?","6:00 AM – 8:00 AM, 2 hours daily."],
 ["How can I contact the trainer?","Call or WhatsApp Satish Konduru on +91 91822 56249, or email rsktechminds@gmail.com."]];
-/* Curriculum: 65 topics in 9 phases (original numbering & sequence) */
+/* Curriculum: 90 topics in 15 phases (original numbering & sequence; Topics 66-90 = MCP, per course agenda PDF) */
 var PHASES=[
 {n:"Phase 1",t:"Python Programming Foundations",r:"Topics 1–13",topics:[
 [1,"Python Introduction & Environment Setup",["Installing Python & IDE setup","Running your first Python program","Python execution model & REPL","Setting up projects correctly"]],
@@ -563,18 +678,49 @@ var PHASES=[
 [62,"AI Automation & Business Integrations",["Automating business workflows","CRM automation patterns","Connecting agents to business APIs","AI-powered Business Assistant"]],
 [63,"AI Security, Permissions & Guardrails",["Agent permissions & access control","Database & API permission models","Guardrails & safe execution","Secure AI Agent build"]],
 [64,"Evaluation, Observability & OpenTelemetry",["Evaluating RAG & agent quality","Tracing agent behaviour","OpenTelemetry for AI systems","Evaluation system build"]],
-[65,"Production Deployment & Capstone",["Dockerising AI applications","Multi-user RAG + Agent architecture","Deployment & scaling basics","Reusable AI Agent Platform capstone"]]]}];
+[65,"Production Deployment & Capstone",["Dockerising AI applications","Multi-user RAG + Agent architecture","Deployment & scaling basics","Reusable AI Agent Platform capstone"]]]},
+{n:"Phase 10",t:"MCP Fundamentals",r:"Topics 66–70",topics:[
+[66,"MCP Fundamentals",["What is Model Context Protocol?","Why was MCP introduced?","The problem of connecting LLMs to external systems.","Traditional API integrations vs MCP integrations.","MCP vs REST API.","MCP vs function calling.","MCP vs plugins and custom integrations.","MCP vs LangChain tools.","MCP vs AI Agent frameworks.","What MCP does—and what it does not do.","Real-world MCP use cases.","MCP ecosystem and its architecture."]],
+[67,"MCP Architecture and Core Components",["MCP Host.","MCP Client.","MCP Server.","Relationship between Host, Client and Server.","One Host connecting to multiple MCP Servers.","One MCP Server exposing multiple capabilities.","Local MCP Servers vs Remote MCP Servers.","Client-server communication flow.","Request and response lifecycle.","How an AI application uses MCP-provided context.","Separation of responsibilities.","MCP architecture diagrams and real-world scenarios."]],
+[68,"MCP Protocol Fundamentals",["What is a protocol?","What is JSON-RPC 2.0?","JSON-RPC request messages.","JSON-RPC response messages.","JSON-RPC notifications.","Request IDs and correlation.","Parameters and results.","Error objects and error codes.","Message serialization and parsing.","Protocol versioning.","Version negotiation and compatibility.","Capability discovery and negotiation.","Protocol lifecycle.","Initialization and connection readiness.","Shutdown and disconnection.","Handling malformed messages.","Request timeouts and failures."]],
+[69,"MCP Server Development",["Python environment setup.","Virtual environments.","Installing the MCP Python SDK.","Understanding the MCP Python SDK.","Understanding the project structure.","Creating your first MCP project.","Understanding MCP server entry points.","Running an MCP server.","Environment variables and .env.","Dependency management.","Version compatibility.","Debugging installation and runtime problems."]],
+[70,"Building Your First MCP Server",["What is an MCP Server?","Server initialization.","Server name and description.","Registering server capabilities.","Creating your first MCP tool.","Tool names and descriptions.","Tool input parameters.","Input schemas and type validation.","Writing tool handler functions.","Returning tool results.","Handling exceptions.","Running the server.","Testing your server.","Understanding what the SDK handles automatically.","Understanding the low-level protocol behind the SDK."]]]},
+{n:"Phase 11",t:"Advanced MCP Capabilities",r:"Topics 71–79",topics:[
+[71,"MCP Tools — Complete Deep Dive",["What are MCP Tools?","How tools differ from resources and prompts.","Tool discovery using tools/list.","Tool invocation using tools/call.","Tool names and descriptions.","Input schema design.","Required and optional parameters.","Default values.","Enum and constrained parameters.","Structured tool output.","Tool result content types.","Text content.","Image and audio content.","Embedded resource content.","Tool annotations and metadata.","Read-only vs destructive tool design.","Idempotent tool design.","Error handling and meaningful error messages.","Tool execution permissions.","Tool naming and description best practices.","Designing tools that LLMs can understand correctly.","Tool discovery updates and list-change notifications."]],
+[72,"MCP Resources and Resource Templates",["What are MCP Resources?","Resources vs Tools.","Static resources.","Dynamic resources.","Resource URIs.","URI schemes and naming.","Resource metadata.","MIME types.","Reading resources using resources/read.","Listing resources using resources/list.","Resource templates.","URI template parameters.","Resource subscriptions.","Resource update notifications.","Resource content changes.","Text resources.","Binary resources.","File-based resources.","Database-backed resources.","API-backed resources.","Resource access permissions.","Efficient resource design."]],
+[73,"MCP Prompts and Prompt Templates",["What are MCP Prompts?","Prompts vs Tools vs Resources.","Prompt registration.","Prompt discovery using prompts/list.","Retrieving prompts using prompts/get.","Prompt names and descriptions.","Prompt arguments.","Required and optional arguments.","Dynamic prompt generation.","Multiple prompt messages.","System and user message roles.","Reusable workflow templates.","Prompt versioning and maintenance.","Prompt argument validation.","Prompt design best practices."]],
+[74,"MCP Inspector, Testing and Debugging",["What is MCP Inspector?","Installing and launching Inspector.","Connecting to a local server.","Inspecting server capabilities.","Listing available tools.","Calling tools manually.","Inspecting tool input schemas.","Testing resources.","Testing prompts.","Debugging initialization errors.","Debugging transport problems.","Inspecting protocol messages.","Testing invalid inputs.","Testing server exceptions.","Writing automated MCP tests.","Unit testing and integration testing."]],
+[75,"MCP Client Development and Connectivity",["What is an MCP Client?","MCP Client responsibilities.","Client initialization.","Connecting to an MCP Server.","Capability negotiation.","Protocol version compatibility.","Discovering available tools.","Listing resources.","Reading resources.","Listing prompts.","Retrieving prompts.","Calling tools programmatically.","Processing tool responses.","Handling client-side exceptions.","Disconnecting gracefully.","Connecting to multiple servers.","Managing multiple client connections.","Client-side validation."]],
+[76,"MCP Transport Mechanisms",["What is a transport layer?","Why MCP needs transports.","STDIO transport.","How STDIO works.","Standard input and standard output.","Standard error and logging.","Process spawning and lifecycle.","Streamable HTTP transport.","HTTP POST requests.","Server-Sent Events (SSE) and streaming.","HTTP headers.","Request and response framing.","Connection management.","Local vs remote transport.","Transport selection.","Legacy HTTP+SSE compatibility.","Transport troubleshooting."]],
+[77,"Connecting MCP Servers to Real Applications",["MCP server wrapping a REST API.","MCP server wrapping a FastAPI application.","Connecting to MySQL.","Connecting to PostgreSQL.","Connecting to MongoDB.","Connecting to ChromaDB.","File-system integration.","PDF and document processing.","CSV and JSON data integration.","GitHub integration.","Email service integration.","Calendar integration.","External API integration.","Database connection pooling.","Async database operations.","API rate limits and retries.","Environment variables and secrets.","Connection error handling."]],
+[78,"MCP Server Configuration and Host Integration",["What is an MCP Host configuration?","Local server configuration.","STDIO server configuration.","Executable and command configuration.","Arguments and environment variables.","Remote server configuration.","HTTP endpoint configuration.","Authentication configuration.","Connecting MCP servers to compatible AI hosts.","Connecting MCP servers to IDEs.","Connecting MCP servers to custom AI applications.","Managing multiple MCP servers.","Enabling and disabling servers.","Configuration validation.","Troubleshooting connection failures.","Server lifecycle management."]],
+[79,"Advanced MCP Capabilities",["Structured tool outputs.","Output schemas.","Schema validation.","Resource templates in depth.","Resource subscriptions.","Resource change notifications.","Prompt argument completion.","Completions API.","Pagination.","Cursor-based pagination.","Tool list-change notifications.","Resource list-change notifications.","Prompt list-change notifications.","Logging notifications.","Progress notifications.","Cancellation notifications.","Ping and connection health checks.","Handling large results.","Binary data and content types.","Server lifecycle management."]]]},
+{n:"Phase 12",t:"Advanced MCP Client Features and Communication",r:"Topics 80–82",topics:[
+[80,"MCP Client Features — Elicitation, Sampling and Roots",["Client-side capabilities.","Server requests to clients.","What is Elicitation?","Form-based elicitation.","URL-based elicitation.","Requesting additional user information.","Validating elicited input.","Consent and user approval.","What is Sampling?","How a server can request an LLM completion through a client.","Sampling parameters and model preferences.","Sampling security considerations.","What are Roots?","How clients provide workspace context.","Root directory boundaries.","Security implications of exposing file-system context.","Multi-round-trip requests.","Handling input-required results."]],
+[81,"Advanced MCP Communication and Execution",["Request-response patterns.","Notifications.","Multi-round-trip requests (MRTR).","Input-required results.","Retrying requests with user input.","Progress reporting.","Request cancellation.","Timeouts.","Concurrent tool execution.","Asynchronous processing.","Long-running tool operations.","Task-based execution concepts.","Task status and polling.","Resuming long-running operations.","Error recovery.","Connection interruptions.","Stateless vs stateful server implementation modes.","Managing application state independently of protocol requests."]],
+[82,"Building Remote MCP Servers",["Local vs remote MCP servers.","Remote server architecture.","Streamable HTTP implementation.","HTTP endpoint design.","Request handling.","Stateless and stateful deployment choices.","Async request handling.","Session and connection considerations.","Multiple-client support.","Server concurrency.","Reverse proxies.","HTTPS and TLS.","Domain and DNS configuration.","Health checks.","Scaling remote MCP servers.","Server deployment.","Version management.","Remote connection debugging."]]]},
+{n:"Phase 13",t:"AI Agents + MCP Integration",r:"Topics 83–84",topics:[
+[83,"AI Agents + MCP Integration",["LLMs and MCP integration.","AI Agent architecture with MCP.","MCP Client inside an AI Agent.","Connecting LLMs to MCP Clients.","Tool discovery by an agent.","Converting MCP tool definitions into model tool schemas.","Sending tool definitions to an LLM.","Understanding LLM tool-call responses.","Executing MCP tool calls.","Returning results to the LLM.","Multi-step tool execution.","Tool selection and routing.","Tool-call validation.","Handling incorrect tool selection.","Handling multiple MCP servers.","Dynamic tool discovery.","Agent planning and execution.","Combining MCP with RAG.","Combining MCP with agent memory.","Human approval before sensitive actions."]],
+[84,"MCP with Agent Frameworks and Orchestration",["MCP without an agent framework.","MCP with LangChain.","MCP with LangGraph.","MCP with LlamaIndex.","MCP with custom Python agents.","MCP integration patterns in each framework.","Tool adapters and wrappers.","Agent state management.","Conditional workflows.","Sequential tool execution.","Parallel tool execution.","Multi-agent communication.","Supervisor and worker agents.","Agent-to-MCP-server routing.","Human-in-the-loop workflows.","Checkpoints and recovery.","Framework-independent MCP architecture.","Avoiding unnecessary framework dependencies."]]]},
+{n:"Phase 14",t:"Enterprise MCP Architecture and Security",r:"Topics 85–87",topics:[
+[85,"Multi-Server and Enterprise MCP Architecture",["One host with multiple MCP clients.","Connecting multiple MCP servers.","Server discovery and registration.","Tool aggregation.","Tool namespace management.","Avoiding duplicate tool names.","Routing requests to the correct server.","Combining resources from different servers.","Coordinating multiple tools.","Server-to-server isolation.","MCP gateways and proxies.","Centralized server management.","Enterprise MCP architecture.","Tenant-aware MCP connections.","Per-user server access.","Per-role tool availability.","Multi-school and multi-branch access boundaries.","Failure isolation.","Scalability and maintainability.","Avoiding unnecessary MCP servers."]],
+[86,"MCP Security, Production and Advanced Engineering",["MCP security architecture.","Authentication vs authorization.","API keys and bearer tokens.","OAuth 2.0 fundamentals.","OAuth-based MCP authorization.","Protected resource metadata.","Authorization server concepts.","Token validation.","Token expiration and refresh.","Scope-based permissions.","Per-user authorization.","Per-tool authorization.","Role-based access control (RBAC).","Tenant-level access control.","Database permission enforcement.","Secrets management.","Secure environment variables.","Avoiding credential exposure.","Secure tool execution.","User consent and confirmation.","Read-only vs write operations.","Destructive-operation protection.","Audit logging.","Rate limiting.","Secure error messages."]],
+[87,"MCP Security Threats and Guardrails",["Prompt injection.","Indirect prompt injection.","Malicious MCP tool descriptions.","Malicious resources and documents.","Tool poisoning.","Confused deputy problems.","Credential theft.","Unauthorized tool invocation.","Data exfiltration.","Excessive permissions.","Untrusted external servers.","Supply-chain risks.","Input validation.","Output validation.","SQL injection prevention.","Path traversal prevention.","SSRF prevention.","Sandboxing.","Allowlisting trusted servers.","Human approval for high-risk operations.","Least-privilege access.","Security testing and threat modeling."]]]},
+{n:"Phase 15",t:"MCP Testing, Production and Advanced Ecosystem",r:"Topics 88–90",topics:[
+[88,"MCP Testing, Monitoring and Production Operations",["Unit testing MCP tools.","Integration testing.","Client-server compatibility testing.","Protocol conformance testing.","MCP Inspector.","Mock MCP servers.","Testing invalid tool arguments.","Testing permission failures.","Testing concurrent requests.","Load testing.","Performance profiling.","Structured logging.","Distributed tracing.","OpenTelemetry.","Monitoring tool execution.","Measuring latency.","Error-rate monitoring.","Usage and cost tracking.","Audit trails.","Alerting and health checks.","Retry strategies.","Circuit breakers.","Graceful shutdown.","Deployment automation.","CI/CD pipelines.","Versioning and backward compatibility.","Production troubleshooting."]],
+[89,"Advanced MCP Ecosystem, Extensions and Future Architecture",["MCP SDK architecture.","Low-level MCP server implementation.","Middleware.","Request handlers and context.","Dependency injection.","Server lifespan management.","Header and request context handling.","Custom transport considerations.","MCP extensions.","Extension negotiation.","Protocol evolution.","MCP Apps and interactive user interfaces.","Embedded interactive content.","MCP registries and server discovery ecosystems.","MCP gateways and enterprise integration patterns.","Building reusable MCP server packages.","Publishing and maintaining MCP servers.","SDK migration and compatibility.","MCP with multimodal systems.","Advanced enterprise deployment patterns."]],
+[90,"Practical MCP Projects",["Project 1 — Calculator MCP Server.","Project 2 — Document and File MCP Server.","Project 3 — Database MCP Server.","Project 4 — MCP Client + LLM Application.","Project 5 — MCP-Powered AI Agent.","Project 6 — Enterprise Admissions AI Agent."]]]}];
 /* ---------- RENDER ---------- */
 function esc(s){return s.replace(/&/g,"&amp;")}
 document.getElementById("highlightGrid").innerHTML=HIGHLIGHTS.map(function(h){return '<article class="card reveal"><div class="icon">'+h[0]+'</div><h3>'+h[1]+'</h3><p>'+h[2]+'</p></article>'}).join("");
 document.getElementById("journey").innerHTML=JOURNEY.map(function(j,i){return '<div class="jstep reveal"><div class="jnum">'+String(i+1).padStart(2,"0")+'</div><h3>'+j+'</h3></div>'}).join("");
-document.getElementById("projectGrid").innerHTML=PROJECTS.map(function(p,i){return '<article class="card reveal"><div class="icon">'+["⚡","🔐","🚀","🔎","📄","💬","🤖","🎧","🧰","🏢","🛠️","🧠","🕸️","🔬","🖼️","💼","📈","🛡️","🌐","♻️"][i]+'</div><h3>'+p[0]+'</h3><p>'+p[1]+'</p><div>'+p[2].split(" · ").map(function(t){return '<span class="tag">'+t+'</span>'}).join("")+'</div></article>'}).join("");
+document.getElementById("projectGrid").innerHTML=PROJECTS.map(function(p,i){return '<article class="card reveal"><div class="icon">'+["⚡","🔐","🚀","🔎","📄","💬","🤖","🎧","🧰","🏢","🛠️","🧠","🕸️","🔬","🖼️","💼","📈","🛡️","🌐","♻️","🧮","📂","🗃️","🔌","🦾","🏛️"][i]+'</div><h3>'+p[0]+'</h3><p>'+p[1]+'</p><div>'+p[2].split(" · ").map(function(t){return '<span class="tag">'+t+'</span>'}).join("")+'</div></article>'}).join("");
 document.getElementById("techGrid").innerHTML=TECH.map(function(t){return '<div class="tech-group reveal"><h3>'+t[0]+'</h3><div>'+t[1].map(function(x){return '<span class="pill">'+x+'</span>'}).join("")+'</div></div>'}).join("");
 document.getElementById("whyGrid").innerHTML=WHY.map(function(w){return '<article class="card reveal"><div class="icon">'+w[0]+'</div><h3>'+w[1]+'</h3><p>'+w[2]+'</p></article>'}).join("");
 document.getElementById("faqList").innerHTML=FAQS.map(function(f,i){return '<div class="faq-item'+(i===0?" open":"")+'"><button class="faq-q" type="button" aria-expanded="'+(i===0)+'"><span>'+f[0]+'</span><span class="chev">▾</span></button><div class="faq-a">'+f[1]+'</div></div>'}).join("");
 var nav=document.getElementById("phaseNav"),list=document.getElementById("phaseList");
 nav.innerHTML=PHASES.map(function(p,i){var c=p.topics.length;return '<button type="button" data-phase="'+i+'" class="'+(i===0?"active":"")+'">'+p.n+': '+p.t+'<small>'+p.r+' · '+c+' topics</small></button>'}).join("");
-list.innerHTML=PHASES.map(function(p,i){var topics=p.topics.map(function(t){return '<div class="topic"><button class="topic-head" type="button" aria-expanded="false"><span class="tnum">'+String(t[0]).padStart(2,"0")+'</span><h4>'+t[1]+'</h4><span class="cnt">'+t[2].length+' subtopics</span><span class="chev">▾</span></button><div class="topic-body"><ul>'+t[2].map(function(s){return '<li>'+s+'</li>'}).join("")+'</ul></div></div>'}).join("");return '<div class="phase-block'+(i===0?" open":"")+'" id="phase-'+i+'"><button class="phase-head" type="button" aria-expanded="'+(i===0)+'"><span class="pnum">'+p.n.toUpperCase()+'</span><h3>'+p.t+'</h3><span class="meta">'+p.r+'</span><span class="chev">▾</span></button><div class="phase-body">'+topics+'<button class="phase-back" type="button" data-back-phases>↑ Back to all phases — choose another phase</button></div></div>'}).join("");
+list.innerHTML=PHASES.map(function(p,i){var topics=p.topics.map(function(t){return '<div class="topic"><button class="topic-head" type="button" aria-expanded="false"><span class="tnum">'+String(t[0]).padStart(2,"0")+'</span><h4>'+t[1]+'</h4><span class="cnt">'+t[2].length+' subtopics</span><span class="chev">▾</span></button><div class="topic-body"><ul>'+t[2].map(function(s){return '<li>'+s+'</li>'}).join("")+'</ul></div></div>'}).join("");return '<div class="phase-block'+(i===0?" open":"")+(i>=9?" mcp-phase":"")+'" id="phase-'+i+'"><button class="phase-head" type="button" aria-expanded="'+(i===0)+'"><span class="pnum">'+p.n.toUpperCase()+'</span><h3>'+p.t+'</h3>'+(i>=9?'<span class="mcp-badge">MCP</span>':"")+'<span class="meta">'+p.r+'</span><span class="chev">▾</span></button><div class="phase-body">'+topics+'<button class="phase-back" type="button" data-back-phases>↑ Back to all phases — choose another phase</button></div></div>'}).join("");
 /* ---------- INTERACTIONS ---------- */
 function scrollBackToPhases(){var navEl=document.getElementById("phaseNav");if(!navEl)return;var r=navEl.getBoundingClientRect();window.scrollTo({top:window.pageYOffset+r.top-84,behavior:"smooth"});var firstBtn=navEl.querySelector("button");if(firstBtn){window.setTimeout(function(){try{navEl.setAttribute("tabindex","-1");navEl.focus({preventScroll:true})}catch(err){}},450)}}
 document.addEventListener("click",function(e){
@@ -584,7 +730,7 @@ var ph=e.target.closest(".phase-head");if(ph){var pb=ph.parentElement,pbOpen=pb.
 var fq=e.target.closest(".faq-q");if(fq){var fi=fq.parentElement,fo=fi.classList.contains("open");fi.classList.toggle("open");fq.setAttribute("aria-expanded",String(!fo));return}
 var pn=e.target.closest("[data-phase]");if(pn){var idx=+pn.getAttribute("data-phase");document.querySelectorAll("[data-phase]").forEach(function(b){b.classList.remove("active")});pn.classList.add("active");var blk=document.getElementById("phase-"+idx);blk.classList.add("open");blk.querySelector(".phase-head").setAttribute("aria-expanded","true");var r=blk.getBoundingClientRect(),headerOffset=96;if(r.top<headerOffset||r.top>window.innerHeight-160){window.scrollTo({top:window.pageYOffset+r.top-headerOffset,behavior:"smooth"})}return}
 });
-document.getElementById("expandAll").addEventListener("click",function(){document.querySelectorAll(".phase-block").forEach(function(b){b.classList.add("open");b.querySelector(".phase-head").setAttribute("aria-expanded","true")});document.querySelectorAll(".topic").forEach(function(t){t.classList.add("open");var th=t.querySelector(".topic-head");if(th)th.setAttribute("aria-expanded","true")});this.textContent="Complete Curriculum Open — All 65 Topics ✓";var first=document.getElementById("phase-0"),fr=first.getBoundingClientRect();if(fr.top<96||fr.top>window.innerHeight-160){window.scrollTo({top:window.pageYOffset+fr.top-96,behavior:"smooth"})}});
+document.getElementById("expandAll").addEventListener("click",function(){document.querySelectorAll(".phase-block").forEach(function(b){b.classList.add("open");b.querySelector(".phase-head").setAttribute("aria-expanded","true")});document.querySelectorAll(".topic").forEach(function(t){t.classList.add("open");var th=t.querySelector(".topic-head");if(th)th.setAttribute("aria-expanded","true")});this.textContent="Complete Curriculum Open — All 90 Topics ✓";var first=document.getElementById("phase-0"),fr=first.getBoundingClientRect();if(fr.top<96||fr.top>window.innerHeight-160){window.scrollTo({top:window.pageYOffset+fr.top-96,behavior:"smooth"})}});
 var burger=document.getElementById("burger"),mm=document.getElementById("mobileMenu");
 burger.addEventListener("click",function(){var o=mm.classList.toggle("open");burger.setAttribute("aria-expanded",String(o));burger.textContent=o?"✕":"☰"});
 mm.querySelectorAll("a").forEach(function(a){a.addEventListener("click",function(){mm.classList.remove("open");burger.textContent="☰"})});
